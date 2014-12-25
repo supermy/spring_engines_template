@@ -23,6 +23,10 @@ mvn test -Dtest={测试文件名称}
   find . -type d -name ".svn"|xargs rm -rf 
   find . -type d -iname ".svn" -exec rm -rf {} \; 
 
+
+  mvn to gradle
+  http://mvn2gradle.codetutr.com/
+        
         
 2014-12-24
     逻辑层单独一个项目进行测试，不依赖于数据库
