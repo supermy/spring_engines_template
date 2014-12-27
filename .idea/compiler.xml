@@ -22,9 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="myengine" />
+        <module name="spring_engines_template" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_engines_template" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

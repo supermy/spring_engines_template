@@ -1,4 +1,8 @@
+apply plugin: 'idea'
 apply plugin: 'java'
+//apply plugin: 'application'
+
+//mainClassName = 'com.supermy.rest.service.SpringFrameWork32Test'
 
 repositories {
     maven{
@@ -29,6 +33,8 @@ dependencies {
     compile "javax.servlet.jsp:jsp-api:2.1"
     compile "javax.servlet:jstl:1.2"
     compile "junit:junit:4.7"
+   //compile fileTree(dir: 'libs', include: '*.jar')
+
 }
 
 

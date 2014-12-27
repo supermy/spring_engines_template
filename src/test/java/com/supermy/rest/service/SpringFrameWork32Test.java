@@ -47,6 +47,7 @@ public class SpringFrameWork32Test {
         Assert.assertNotNull(myMessageService.getMessage("456"));
         Assert.assertNotNull(myMessageService.getMessageCache("hello"));
         Assert.assertNotNull(myMessageService.getMessageCache("hello"));
+        //Assert.fail();
 
     }
 

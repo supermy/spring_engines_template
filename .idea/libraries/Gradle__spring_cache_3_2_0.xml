@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: spring-cache-3.2.0">
+    <CLASSES>
+      <root url="jar://$M2_REPO$/com/google/code/simple-spring-memcached/spring-cache/3.2.0/spring-cache-3.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

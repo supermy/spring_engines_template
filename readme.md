@@ -11,6 +11,9 @@ mvn dependency:tree
 
 mvn test -Dtest={测试文件名称}
 
+2014-12-27
+    gradle test ok
+
 2014-12-25
     全注解框架:
         分层 ok

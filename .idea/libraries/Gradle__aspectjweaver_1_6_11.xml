@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: aspectjweaver-1.6.11">
+    <CLASSES>
+      <root url="jar://$M2_REPO$/org/aspectj/aspectjweaver/1.6.11/aspectjweaver-1.6.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

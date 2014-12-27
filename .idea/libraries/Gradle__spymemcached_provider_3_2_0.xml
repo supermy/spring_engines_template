@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: spymemcached-provider-3.2.0">
+    <CLASSES>
+      <root url="jar://$M2_REPO$/com/google/code/simple-spring-memcached/spymemcached-provider/3.2.0/spymemcached-provider-3.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
