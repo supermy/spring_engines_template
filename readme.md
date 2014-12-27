@@ -23,6 +23,7 @@ mvn test -Dtest={测试文件名称}
         memcached ok
         properties ok
         
+        
   find . -type d -name ".svn"|xargs rm -rf 
   find . -type d -iname ".svn" -exec rm -rf {} \; 
 
