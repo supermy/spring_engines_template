@@ -1,6 +1,0 @@
-com/supermy/rest/utils/MyKeyGenerator.class
-com/supermy/rest/service/MyMessageService.class
-com/supermy/rest/service/MyAsyncService.class
-com/supermy/rest/aop/MyAspect.class
-com/supermy/rest/aop/SystemArchitecture.class
-com/supermy/rest/aop/SpringAutoConfig.class
