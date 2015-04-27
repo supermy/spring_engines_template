@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: spring-core-3.2.12.RELEASE">
+  <library name="Gradle: org.springframework:spring-core:3.2.12.RELEASE">
     <CLASSES>
       <root url="jar://$M2_REPO$/org/springframework/spring-core/3.2.12.RELEASE/spring-core-3.2.12.RELEASE.jar!/" />
     </CLASSES>

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: simple-spring-memcached-3.2.0">
+  <library name="Gradle: com.google.code.simple-spring-memcached:simple-spring-memcached:3.2.0">
     <CLASSES>
       <root url="jar://$M2_REPO$/com/google/code/simple-spring-memcached/simple-spring-memcached/3.2.0/simple-spring-memcached-3.2.0.jar!/" />
     </CLASSES>

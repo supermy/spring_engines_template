@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: junit-4.7">
+  <library name="Gradle: junit:junit:4.7">
     <CLASSES>
       <root url="jar://$M2_REPO$/junit/junit/4.7/junit-4.7.jar!/" />
     </CLASSES>

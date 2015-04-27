@@ -1,4 +1,4 @@
-package com.supermy.rest.aop;
+package com.supermy.rest.springconfig;
 
 /**
  * Created by moyong on 14/12/24.
@@ -39,7 +39,7 @@ import java.util.*;
 @PropertySource("classpath:app.properties")
 @EnableCaching
 //@EnableLoadTimeWeaving //允许时间监控
-public abstract  class SpringAutoConfig implements CachingConfigurer ,LoadTimeWeavingConfigurer{
+public abstract  class ServiceConfig implements CachingConfigurer ,LoadTimeWeavingConfigurer{
 
     @Override
     public LoadTimeWeaver getLoadTimeWeaver() {

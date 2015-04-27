@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: aspectjrt-1.6.11">
+  <library name="Gradle: org.aspectj:aspectjrt:1.6.11">
     <CLASSES>
       <root url="jar://$M2_REPO$/org/aspectj/aspectjrt/1.6.11/aspectjrt-1.6.11.jar!/" />
     </CLASSES>

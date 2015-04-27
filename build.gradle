@@ -37,5 +37,16 @@ dependencies {
 
 }
 
+jar {
+    baseName = 'spring-engines-rest'
+    version =  '0.1.0'
+}
+
+task myTask << {
+    if (System.properties['love']) {
+        println "I love you! Gradle!"
+    }else println 'love......'
+}
+
 
 

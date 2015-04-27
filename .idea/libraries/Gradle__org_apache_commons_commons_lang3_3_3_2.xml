@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: commons-lang3-3.3.2">
+  <library name="Gradle: org.apache.commons:commons-lang3:3.3.2">
     <CLASSES>
       <root url="jar://$M2_REPO$/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/" />
     </CLASSES>

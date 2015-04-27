@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: servlet-api-2.5">
+  <library name="Gradle: javax.servlet:servlet-api:2.5">
     <CLASSES>
       <root url="jar://$M2_REPO$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
     </CLASSES>

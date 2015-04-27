@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: jackson-mapper-asl-1.9.11">
+  <library name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.11">
     <CLASSES>
       <root url="jar://$M2_REPO$/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar!/" />
     </CLASSES>

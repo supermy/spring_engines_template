@@ -4,7 +4,7 @@ package com.supermy.rest.service;
  * Created by moyong on 14/12/24.
  */
 
-import com.supermy.rest.aop.SpringAutoConfig;
+import com.supermy.rest.springconfig.ServiceConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import java.util.concurrent.TimeoutException;
  * 测试类
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = SpringAutoConfig.class)
+@ContextConfiguration(classes = ServiceConfig.class)
 //@TransactionConfiguration(transactionManager="txMgr", defaultRollback=false)
 //@Transactional
 public class SpringFrameWork32AsyncTest {
@@ -33,7 +33,7 @@ public class SpringFrameWork32AsyncTest {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =
-                new AnnotationConfigApplicationContext(SpringAutoConfig.class);
+                new AnnotationConfigApplicationContext(ServiceConfig.class);
 
 
 

@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: jstl-1.2">
+  <library name="Gradle: javax.servlet:jstl:1.2">
     <CLASSES>
       <root url="jar://$M2_REPO$/javax/servlet/jstl/1.2/jstl-1.2.jar!/" />
     </CLASSES>

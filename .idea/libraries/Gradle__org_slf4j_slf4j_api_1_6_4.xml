@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="Gradle: slf4j-api-1.6.4">
+  <library name="Gradle: org.slf4j:slf4j-api:1.6.4">
     <CLASSES>
       <root url="jar://$M2_REPO$/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar!/" />
     </CLASSES>
