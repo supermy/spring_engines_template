@@ -11,6 +11,13 @@ mvn dependency:tree
 
 mvn test -Dtest={测试文件名称}
 
+2015-05-13
+    Curator 调用 zookeeper 示例；
+    template.mustache模板调用；
+
+    json配置文件格式到zookeeper,分布式配置初始化;分布式文件配置，使用kafka代替呢？
+    
+
 2014-12-27
     gradle test ok
 
