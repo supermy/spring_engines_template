@@ -18,8 +18,27 @@ import org.apache.curator.test.TestingServer;
 import org.apache.curator.utils.CloseableUtils;
 import org.apache.curator.utils.ZKPaths;
 import org.apache.zookeeper.KeeperException;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Map;
+
+import org.apache.curator.framework.CuratorFramework;
+import org.apache.curator.framework.CuratorFrameworkFactory;
+import org.apache.curator.framework.recipes.cache.ChildData;
+import org.apache.curator.framework.recipes.cache.TreeCache;
+import org.apache.curator.framework.recipes.cache.TreeCacheEvent;
+import org.apache.curator.framework.recipes.cache.TreeCacheListener;
+import org.apache.curator.retry.ExponentialBackoffRetry;
+import org.apache.curator.test.TestingServer;
+import org.apache.curator.utils.CloseableUtils;
+import org.apache.curator.utils.ZKPaths;
+import org.apache.zookeeper.KeeperException;
+
 public class TreeCacheExample {
     private static final String PATH = "/example/treeCache";
+
     public static void main(String[] args) throws Exception {
         TestingServer server = new TestingServer();
         CuratorFramework client = null;
@@ -27,6 +46,7 @@ public class TreeCacheExample {
         try {
             client = CuratorFrameworkFactory.newClient(server.getConnectString(), new ExponentialBackoffRetry(1000, 3));
             client.start();
+
             cache = new TreeCache(client, PATH);
             cache.start();
             processCommands(client, cache);
@@ -36,8 +56,10 @@ public class TreeCacheExample {
             CloseableUtils.closeQuietly(server);
         }
     }
+
     private static void addListener(final TreeCache cache) {
         TreeCacheListener listener = new TreeCacheListener() {
+
             @Override
             public void childEvent(CuratorFramework client, TreeCacheEvent event) throws Exception {
                 switch (event.getType()) {
@@ -59,9 +81,12 @@ public class TreeCacheExample {
                         System.out.println("Other event: " + event.getType().name());
                 }
             }
+
         };
+
         cache.getListenable().addListener(listener);
     }
+
     private static void processCommands(CuratorFramework client, TreeCache cache) throws Exception {
         // More scaffolding that does a simple command line processor
         printHelp();
@@ -97,8 +122,10 @@ public class TreeCacheExample {
                 // up
             }
         } finally {
+
         }
     }
+
     private static void list(TreeCache cache) {
         if (cache.getCurrentChildren(PATH).size() == 0) {
             System.out.println("* empty *");
@@ -108,6 +135,7 @@ public class TreeCacheExample {
             }
         }
     }
+
     private static void remove(CuratorFramework client, String command, String[] args) throws Exception {
         if (args.length != 1) {
             System.err.println("syntax error (expected remove <path>): " + command);
@@ -125,6 +153,7 @@ public class TreeCacheExample {
             // ignore
         }
     }
+
     private static void setValue(CuratorFramework client, String command, String[] args) throws Exception {
         if (args.length != 2) {
             System.err.println("syntax error (expected set <path> <value>): " + command);
@@ -143,6 +172,7 @@ public class TreeCacheExample {
             client.create().creatingParentsIfNeeded().forPath(path, bytes);
         }
     }
+
     private static void printHelp() {
         System.out.println("An example of using PathChildrenCache. This example is driven by entering commands at the prompt:\n");
         System.out.println("set <name> <value>: Adds or updates a node with the given name");
